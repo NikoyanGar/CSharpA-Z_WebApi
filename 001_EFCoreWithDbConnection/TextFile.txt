@@ -1,0 +1,18 @@
+﻿Microsoft.EntityFrameworkCore.SqlServer
+
+Microsoft.EntityFrameworkCore.Tools
+
+docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=P@ssw0rd'  -p 1433:1433 --name sql_server -d mcr.microsoft.com/mssql/server:2019-latest
+
+Explanation of the command:
+-e 'ACCEPT_EULA=Y': Accepts the end-user license agreement.
+-e 'MSSQL_SA_PASSWORD=YourStrong!Passw0rd': Sets the SA (System Administrator) password.
+-p 1433:1433: Maps port 1433 on your host to port 1433 in the container.
+--name sql_server: Names the container sql_server.
+-d: Runs the container in detached mode.
+mcr.microsoft.com/mssql/server:2019-latest: Specifies the image to use.
+
+
+Add-migration InitialCreate
+
+Update-Database

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_RoutingExplain", "001_R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_DomainDtoExplain", "001_DomainDtoExplain\001_DomainDtoExplain.csproj", "{78359AD1-6E8C-4972-831A-B56C0EFDA5C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_EFCoreWithDbConnection", "001_EFCoreWithDbConnection\001_EFCoreWithDbConnection.csproj", "{02CEF4A0-E3E8-4D2B-AA09-91537DE26D85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{78359AD1-6E8C-4972-831A-B56C0EFDA5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78359AD1-6E8C-4972-831A-B56C0EFDA5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78359AD1-6E8C-4972-831A-B56C0EFDA5C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02CEF4A0-E3E8-4D2B-AA09-91537DE26D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02CEF4A0-E3E8-4D2B-AA09-91537DE26D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02CEF4A0-E3E8-4D2B-AA09-91537DE26D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02CEF4A0-E3E8-4D2B-AA09-91537DE26D85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
