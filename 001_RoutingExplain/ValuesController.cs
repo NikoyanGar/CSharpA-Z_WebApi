@@ -4,6 +4,11 @@
 
 namespace _001_RoutingExplain
 {
+    //ControllerBase is a base class for an MVC controller without view support.
+    //It is used to create Web APIs.
+    //The ControllerBase class is a part of the Microsoft.AspNetCore.Mvc namespace.
+    //It is not strictly necessary, just more to the point.
+    //The Controller class derives from ControllerBase and only adds some members that are needed to support Views.
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
