@@ -13,6 +13,24 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001_EFCoreWithDbConnection"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContentNegotiation", "ContentNegotiationDemo-dotent_6\ContentNegotiation\ContentNegotiation.csproj", "{0ADCD5EB-150B-4358-BDF9-AB3BFB34239D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructuredLogging.WebApi", "001-structured-logging-with-serilog-in-aspnet-core\StructuredLogging.WebApi\StructuredLogging.WebApi.csproj", "{EB2247B4-2017-49DA-9295-948DB81D3712}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalExceptionHandling", "002-global-exception-handling-in-aspnet-core\GlobalExceptionHandling\GlobalExceptionHandling.csproj", "{F88B335F-A2EE-470C-878A-C766636F3957}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentValidations.NET8", "003-fluentvalidation-in-aspnet-core\FluentValidations.NET8\FluentValidations.NET8.csproj", "{23DCC12C-CF5E-4AAD-A7BB-141CA7523CF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSMediatR", "004-cqrs-and-mediatr-in-aspnet-core\CQRSMediatR\CQRSMediatR.csproj", "{147AB4BE-D2FE-43F2-99E1-AD9347CD9CCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatRPipelineFluentValidation", "005-validation-with-mediatr-pipeline-behavior-and-fluentvalidation\MediatRPipelineFluentValidation\MediatRPipelineFluentValidation.csproj", "{4897DF8D-11A2-4674-AAF2-2034A88FB973}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InMemoryCaching", "006-in-memory-caching-in-aspnet-core\InMemoryCaching\InMemoryCaching.csproj", "{58723069-BB98-47E8-BCE3-96BC4F4FDC65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedCaching", "007-distributed-caching-in-aspnet-core-with-redis\DistributedCaching\DistributedCaching.csproj", "{5BFEE073-7A05-49EB-924B-44C007493959}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResponseCaching", "008-response-caching-with-mediatr-in-aspnet-core\ResponseCaching\ResponseCaching.csproj", "{AC93FFA5-CD3E-47C2-A7D3-65B1D37D065D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerEssentials", "009-docker-essentials-for-dotnet-developers\DockerEssentials\DockerEssentials.csproj", "{8C3645DA-02FC-4D67-9D79-A634E228933F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +57,42 @@ Global
 		{0ADCD5EB-150B-4358-BDF9-AB3BFB34239D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ADCD5EB-150B-4358-BDF9-AB3BFB34239D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ADCD5EB-150B-4358-BDF9-AB3BFB34239D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB2247B4-2017-49DA-9295-948DB81D3712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB2247B4-2017-49DA-9295-948DB81D3712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB2247B4-2017-49DA-9295-948DB81D3712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB2247B4-2017-49DA-9295-948DB81D3712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88B335F-A2EE-470C-878A-C766636F3957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88B335F-A2EE-470C-878A-C766636F3957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88B335F-A2EE-470C-878A-C766636F3957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88B335F-A2EE-470C-878A-C766636F3957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23DCC12C-CF5E-4AAD-A7BB-141CA7523CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23DCC12C-CF5E-4AAD-A7BB-141CA7523CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23DCC12C-CF5E-4AAD-A7BB-141CA7523CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23DCC12C-CF5E-4AAD-A7BB-141CA7523CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147AB4BE-D2FE-43F2-99E1-AD9347CD9CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147AB4BE-D2FE-43F2-99E1-AD9347CD9CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147AB4BE-D2FE-43F2-99E1-AD9347CD9CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147AB4BE-D2FE-43F2-99E1-AD9347CD9CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4897DF8D-11A2-4674-AAF2-2034A88FB973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4897DF8D-11A2-4674-AAF2-2034A88FB973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4897DF8D-11A2-4674-AAF2-2034A88FB973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4897DF8D-11A2-4674-AAF2-2034A88FB973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58723069-BB98-47E8-BCE3-96BC4F4FDC65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58723069-BB98-47E8-BCE3-96BC4F4FDC65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58723069-BB98-47E8-BCE3-96BC4F4FDC65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58723069-BB98-47E8-BCE3-96BC4F4FDC65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BFEE073-7A05-49EB-924B-44C007493959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BFEE073-7A05-49EB-924B-44C007493959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BFEE073-7A05-49EB-924B-44C007493959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BFEE073-7A05-49EB-924B-44C007493959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC93FFA5-CD3E-47C2-A7D3-65B1D37D065D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC93FFA5-CD3E-47C2-A7D3-65B1D37D065D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC93FFA5-CD3E-47C2-A7D3-65B1D37D065D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC93FFA5-CD3E-47C2-A7D3-65B1D37D065D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C3645DA-02FC-4D67-9D79-A634E228933F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C3645DA-02FC-4D67-9D79-A634E228933F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C3645DA-02FC-4D67-9D79-A634E228933F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C3645DA-02FC-4D67-9D79-A634E228933F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
