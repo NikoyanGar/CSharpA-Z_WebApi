@@ -31,13 +31,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResponseCaching", "008-resp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerEssentials", "009-docker-essentials-for-dotnet-developers\DockerEssentials\DockerEssentials.csproj", "{8C3645DA-02FC-4D67-9D79-A634E228933F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_WebApplicationBuilder", "001_WebApplicationBuilder\001_WebApplicationBuilder.csproj", "{34D7AFC2-4F34-480D-97DD-E84DFAC1F60E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001_WebApplicationBuilder", "001_WebApplicationBuilder\001_WebApplicationBuilder.csproj", "{34D7AFC2-4F34-480D-97DD-E84DFAC1F60E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_WebApplication", "001_WebApplication\001_WebApplication.csproj", "{4068C2C8-8C38-4E0E-969C-14DF26A74CCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001_WebApplication", "001_WebApplication\001_WebApplication.csproj", "{4068C2C8-8C38-4E0E-969C-14DF26A74CCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_Middleware", "001_Middleware\001_Middleware.csproj", "{370E9721-72B1-461F-B75E-E853A9556EFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001_Middleware", "001_Middleware\001_Middleware.csproj", "{370E9721-72B1-461F-B75E-E853A9556EFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_Middleware", "002_Middleware\002_Middleware.csproj", "{CA889375-82A7-4B0A-B7F2-7E56981C641B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "002_Middleware", "002_Middleware\002_Middleware.csproj", "{CA889375-82A7-4B0A-B7F2-7E56981C641B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourceManagement", "CourceManagement\CourceManagement.csproj", "{2344A91D-57BF-42CD-8308-D89B5303A4C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{CA889375-82A7-4B0A-B7F2-7E56981C641B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA889375-82A7-4B0A-B7F2-7E56981C641B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA889375-82A7-4B0A-B7F2-7E56981C641B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2344A91D-57BF-42CD-8308-D89B5303A4C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2344A91D-57BF-42CD-8308-D89B5303A4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2344A91D-57BF-42CD-8308-D89B5303A4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2344A91D-57BF-42CD-8308-D89B5303A4C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
