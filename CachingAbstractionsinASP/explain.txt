@@ -1,0 +1,13 @@
+Caching improves your application's performance by reducing latency and server load while enhancing scalability and user experience.
+
+Faster data retrieval: Cached data can be accessed much faster than retrieving it from the source (like a database or an API). Caches are typically stored in memory (RAM).
+Fewer database queries: Caching frequently accessed data reduces the number of database queries. This reduces the load on the database server.
+Lower CPU usage: Rendering web pages or processing API responses can consume significant CPU resources. Caching the results reduces the need for repetitive CPU-intensive tasks.
+Handling increased traffic: By reducing the load on backend systems, caching allows your application to handle more concurrent users and requests.
+Distributed caching: Distributed cache solutions like Redis enable scaling the cache across multiple servers, further improving performance and resilience.
+In a recent project I worked on, we used Redis to scale to more than 1,000,000 users. We only had one SQL Server instance with a read-replica for reporting. The power of caching, eh?
+
+ASP.NET Core provides two primary abstractions for working with caches:
+
+IMemoryCache: Stores data in the memory of the web server. Simple to use but not suitable for distributed scenarios.
+IDistributedCache: Offers a more robust solution for distributed applications. It allows you to store cached data in a distributed cache like Redis.
