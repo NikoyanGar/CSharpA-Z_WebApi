@@ -1,9 +1,12 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
 using System.Text.Json;
-
 namespace CachingAbstractionsinASP.Extensions
 {
     //Here's how you can implement the cache-aside pattern as an extension method for IDistributedCache:
+    //    Challenges:
+    //Cache Invalidation: Ensuring the cache remains up-to-date when the underlying data changes.
+    //Stale Data: There's a risk of serving outdated data if the cache is not properly invalidated or updated.
+    //Complexity: Application logic needs to handle cache misses, data retrieval, and updates.
     public static class DistributedCacheExtensions
     {
         public static DistributedCacheEntryOptions DefaultExpiration => new()
