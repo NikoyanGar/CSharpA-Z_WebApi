@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourceManagement", "CourceM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthExample", "AuthExample\AuthExample.csproj", "{9ACDED56-478C-47B1-8B82-4C4F5E8E0AA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisExplain", "RedisExplain\RedisExplain.csproj", "{680B9C3E-D8E9-4A91-8793-66C2C6F9D258}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{9ACDED56-478C-47B1-8B82-4C4F5E8E0AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ACDED56-478C-47B1-8B82-4C4F5E8E0AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ACDED56-478C-47B1-8B82-4C4F5E8E0AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{680B9C3E-D8E9-4A91-8793-66C2C6F9D258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{680B9C3E-D8E9-4A91-8793-66C2C6F9D258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{680B9C3E-D8E9-4A91-8793-66C2C6F9D258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{680B9C3E-D8E9-4A91-8793-66C2C6F9D258}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
