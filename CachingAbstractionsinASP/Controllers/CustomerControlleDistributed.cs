@@ -1,6 +1,7 @@
+using CachingAbstractionsinASP.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.Distributed;
 
 namespace CachingAbstractionsinASP.Controllers
 {
@@ -22,7 +23,9 @@ namespace CachingAbstractionsinASP.Controllers
         [HttpGet]
         public async Task<IEnumerable<Customer>> Get()
         {
-            var customers = await _distributedCache.GetOrSetAsync(CustomerCacheKey, async () =>
+            var customers = await _distributedCache.GetOrCreateAsync(
+               key: CustomerCacheKey,
+               factory: async () =>
             {
                 return await _context.Customers.ToListAsync();
             });
@@ -34,7 +37,7 @@ namespace CachingAbstractionsinASP.Controllers
         public async Task<Customer> Get(int id)
         {
             var cacheKey = $"{CustomerCacheKey}_{id}";
-            var customer = await _distributedCache.GetOrSetAsync(cacheKey, async () =>
+            var customer = await _distributedCache.GetOrCreateAsync(cacheKey, async () =>
             {
                 return await _context.Customers.FindAsync(id);
             });

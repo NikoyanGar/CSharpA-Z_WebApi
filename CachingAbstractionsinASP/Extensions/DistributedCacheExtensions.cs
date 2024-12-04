@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
 using System.Text.Json;
 
-namespace CachingAbstractionsinASP
+namespace CachingAbstractionsinASP.Extensions
 {
     //Here's how you can implement the cache-aside pattern as an extension method for IDistributedCache:
     public static class DistributedCacheExtensions

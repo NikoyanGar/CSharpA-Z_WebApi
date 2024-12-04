@@ -1,7 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using RedisExplain;
-using StackExchange.Redis;
-using System.Net.Sockets;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +13,9 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.Configuration = builder.Configuration.GetSection("RedisConfiguration:Host").Value;
 });
 //Another Redis Desktop Manager for Redis UI
-//docker run -d --name redis-stack-server -p 6379:6379 redis / redis - stack - server:latest 
+//docker run -d --name redis-stack-server -p 6379:6379 redis / redis - stack - server:latest
+//docker run -d --name redis-server -p 6379:6379 redis
+
 builder.Services.AddScoped<ICacheService, DistributedCacheService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

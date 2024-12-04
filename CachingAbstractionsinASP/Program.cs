@@ -12,7 +12,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(opt => { opt.UseInMemoryDatabase(databaseName: "demoDb"); });
 builder.Services.AddMemoryCache();
 
-//builder.Services.AddDistributedMemoryCache();
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration.GetSection("RedisConfiguration:Host").Value;
+});
 
 var app = builder.Build();
 
