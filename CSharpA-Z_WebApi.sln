@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostBuilderConsole", "HostB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartupExplained", "StartupExplained\StartupExplained.csproj", "{788CB1CA-48D0-492B-85FE-7659D261710F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{A0DF9B62-B230-4761-A07E-6A67B8AB294E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{788CB1CA-48D0-492B-85FE-7659D261710F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{788CB1CA-48D0-492B-85FE-7659D261710F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{788CB1CA-48D0-492B-85FE-7659D261710F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0DF9B62-B230-4761-A07E-6A67B8AB294E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DF9B62-B230-4761-A07E-6A67B8AB294E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DF9B62-B230-4761-A07E-6A67B8AB294E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DF9B62-B230-4761-A07E-6A67B8AB294E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
