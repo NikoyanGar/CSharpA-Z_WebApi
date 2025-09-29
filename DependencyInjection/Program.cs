@@ -8,25 +8,12 @@ namespace DependencyInjection
 
             // Add controllers (API style for the demo).
             builder.Services.AddControllers();
-
-            // DI registrations demonstrating lifetimes.
+            builder.Services.AddHostedService<MyHostedService>();
+            builder.Services.AddSingleton<ISingletonOperation, SingletonOperation>();
             builder.Services.AddTransient<ITransientOperation, TransientOperation>();
             builder.Services.AddScoped<IScopedOperation, ScopedOperation>();
-            builder.Services.AddSingleton<ISingletonOperation, SingletonOperation>();
-
-            // Additional singleton used by scoped service.
-            builder.Services.AddSingleton<ITimeProvider, SystemTimeProvider>();
-
-            // Scoped aggregator that consumes all lifetimes (and two transients).
             builder.Services.AddScoped<RequestReportService>();
-
-            // Singleton that needs a scoped service - uses IServiceScopeFactory properly.
-            builder.Services.AddSingleton<ISingletonConsumer, SingletonConsumer>();
-
-            // (Anti-pattern) Captive dependency example:
-            // DO NOT REGISTER this - uncommenting would cause the scoped dependency to act like a singleton.
-            // builder.Services.AddSingleton<BadSingletonCapturingScoped>();
-
+            builder.Services.AddSingleton<ITimeProvider, SystemTimeProvider>();
             var app = builder.Build();
 
             app.UseHttpsRedirection();
